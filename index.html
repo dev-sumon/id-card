@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Crad</title>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Noto Sans Bengali font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap" rel="stylesheet">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section class="download-section">
+        <div class="container">
+            <div class="header-section">
+                <div class="main-column">
+                    <div class="left-column">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p>আমাকে আমি ভালো রাখবো <br>
+                                অনলাইন প্রশিক্ষন কেন্দ্র</p>
+                        </div>
+                    </div>
+                    <div class="rihgt-column">
+                        <button class="download-btn" type="button">ডাউনলোড করুন</button>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="id-card" id="id_print">
+        <div class="container">
+            <div class="id-background">
+                <div class="logo-image">
+                    <img src="images/Group 7.png" alt="">
+                </div>
+                <div class="heading">
+                    <h3>( MPF ) DEVELOPMENT COURSE</h3>
+                    <h5>Mental - Physical - Financial Prosperity</h5>
+                </div>
+                <div class="user-image">
+                    <img src="images/user-image.png" alt="">
+                    <div class="user-id">
+                        <p>MPF-09-314/23</p>
+                    </div>
+                </div>
+                <div class="main-column">
+                    <div class="left-column">
+                        <h4>POLAS SHEN</h4>
+                        <p>As an active participant of <br> 9th Batch of</p>
+                    </div>
+                    <div class="right-column">
+                        <div class="icon">
+                            <img src="images/years.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>PERSONAL SKILL DEVELOPMENT (MPF) COURSE 2023</h3>
+                    <p class="course">Course Self-Relaization and Spiritual Development</p>
+                    <p class="date">Issue Date : 6th December 2022</p>
+                    <p class="date">Expire Date : 6th December 2026</p>
+                </div>
+                <div class="footer">
+                    <div class="signature">
+                        <img src="images/signature.png" alt="">
+                        <div class="funder-logo">
+                            <div class="logo">
+                                <img src="images/Layer 7.1.png" alt="">
+                            </div>
+                            <div class="funder">
+                                
+                                <p>Kenan Mahamud</p>
+                                <p>Founder & Trainer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qr-code">
+                        <img src="images/qr-code.png" alt="">
+                        <p>Validity 5 Years</p>
+                    </div>
+                </div>
+                <div class="website-url">
+                    <a href="">www.mpfcourse.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.download-btn').click(function() {
+ 
+                console.log('hi');
+                // Define the element to convert to PDF (the invoice content)
+                var element = document.querySelector('#id_print');
+
+                const options = {
+                    filename: 'test.pdf',
+                    margin: 0.2,
+                    image: {
+                        type: 'jpeg',
+                        quality: 0.98
+                    },
+                    html2canvas: {
+                        scale: 5
+                    },
+                    jsPDF: {
+                        unit: 'in',
+                        format: 'a4',
+                        orientation: 'portrait',
+                        height: 10
+                    },
+                };
+
+                // Generate the PDF from the HTML element
+                console.log('here');
+                html2pdf().set(options).from(element).save();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+@import url('https://fonts.cdnfonts.com/css/agency-fb');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Bahnschrift';
+    src: local('Bahnschrift'), url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT.woff') format('woff');
+}
+
+  
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.download-section .header-section {
+    background: #E8F4FE;
+    padding: 10px 10px;
+
+}
+.download-section .header-section .main-column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.download-section .header-section .main-column .left-column{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    width: 60%;
+}
+.download-section .header-section .main-column .left-column .logo{
+    width: 20%;
+}
+.download-section .header-section .main-column .left-column .logo img{
+    width: 100%;
+}
+.download-section .header-section .main-column .left-colum .content p{
+    font-family: "Noto Sans Bengali";
+    font-size: 18px; 
+    font-weight: 500;
+}
+.download-section .header-section .main-column .rihgt-column{
+    width: 40%;
+    text-align: end;
+}
+.download-section .header-section .main-column .rihgt-column button{
+	font-family: "Noto Sans Bengali SemiCondensed";
+	background: #1D6BB4;
+	border-radius: 50px 50px 50px 50px;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	padding: 15px;
+}
+
+.download-section .header-section .main-column .rihgt-column .fa-xmark {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.id-card .id-background{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.id-card .id-background .logo-image img{
+    width: 100%;
+    padding-top: 60px;
+}
+.id-card .id-background .heading{
+    text-align: center;
+    color: #fff;
+}
+.id-card .id-background .heading h3{
+    font-family: 'Bahnschrift';
+    font-size: 30px;
+    font-weight: 400;
+}
+.id-card .id-background .heading h5{
+    font-family: 'Bahnschrift';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.id-card .id-background .user-image {
+    text-align: center;
+    padding-top: 80px;
+}
+.id-card .id-background .user-image img {
+    width: 40%;
+    margin-left: 13px;
+}
+.id-card .id-background .user-image .user-id {
+    text-align: center;
+}
+.id-card .id-background .user-id p {
+    font-family: 'Bahnschrift';
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #2392DD;
+    padding: 10px 35px;
+    margin-right: -25px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: -20px;
+}
+.id-card .id-background .main-column {
+    display: flex;
+    justify-content: space-between;
+    max-width: 445px;
+    margin: 0 auto;
+    padding-top: 25px;
+    column-gap: 0px;
+    align-items: center;
+}
+.id-card .id-background .main-column .left-column{
+    width: 60%;
+    text-align: end;
+}
+.id-card .id-background .main-column .left-column h4{
+    font-family: 'Bahnschrift';
+    font-size: 30px;
+    font-weight: 400;
+}
+.id-card .id-background .main-column .left-column p{
+    font-family: 'Bahnschrift';
+    font-size: 18px;
+    font-weight: 400;
+    color: #2D2D2D;
+}
+.id-card .id-background .main-column .right-column {
+    width: 40%;
+    text-align: center;
+}
+.id-card .id-background .main-column .right-column .icon img {
+    width: 45%;
+}
+.id-card .id-background .details {
+    text-align: center;
+    padding-top: 6px;
+}
+.id-card .id-background .details h3{
+    font-family: 'Bahnschrift';
+    font-size: 20px;
+    font-weight: 400;
+}
+.id-card .id-background .details .course{
+    font-family: 'Agency FB';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 5px 0px;
+}
+.id-card .id-background .details .date {
+    font-family: 'Arial';
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.id-card .id-background .footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+    margin: 0 auto;
+    padding-top: 0px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.id-card .id-background .footer .signature img{
+    width: 60%;
+    border-bottom: 1px solid #000;
+}
+.id-card .id-background .footer .signature .funder-logo{
+    display: flex;
+}
+.id-card .id-background .footer .signature .funder-logo .funder p{
+    font-family: 'Agency FB', sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.id-card .id-background .footer .qr-code{
+    width: 30%;
+    text-align: center;
+}
+.id-card .id-background .footer .qr-code img {
+    width: 50%;
+}
+.id-card .id-background .footer .qr-code p{
+    font-family: 'Arial';
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.id-card .id-background .website-url {
+    text-align: center;
+    padding: 13px 0px 13px 0px;
+}
+.id-card .id-background .website-url a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Arial';
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 425px){
+    .download-section .header-section p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .download-section .header-section button {
+        padding: 10px;
+    }
+    .id-card .id-background .logo-image img {
+        padding-top: 50px;
+    }
+    .id-card .id-background .logo-image img {
+        padding-top: 40px;
+    }
+    .id-card .id-background .heading h3 {
+        font-size: 25px;
+    }
+    .id-card .id-background .heading h5 {
+        font-size: 17px;
+    }
+    .id-card .id-background .user-id p {
+        padding: 8px 20px;
+
+    }
+    .id-card .id-background .footer {
+        padding: 10px 33px 0px 33px;
+    }
+    .id-card .id-background .footer .signature img {
+        width: 57%;
+    }
+    .id-card .id-background .footer .qr-code img {
+        width: 40%;
+    }
+    .id-card .id-background .footer .signature .funder-logo .funder p {
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .id-card .id-background .footer .qr-code p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+   
+}
+
+@media only screen and (max-width: 375px){
+    .download-section .header-section p {
+        font-size: 13px; 
+    }
+    .download-section .header-section .main-column .rihgt-column button {
+        padding: 7px 5px 7px 5px;
+        margin: 0;
+    }
+    .download-section .main-column .left-column .logo {
+        column-gap: 5px;
+    }
+    .id-card .id-background .heading {  
+        color: #fff;
+        padding-top: 10px;
+    }
+    .id-card .id-background .heading h3 {
+        font-size: 22px;
+    }
+    .id-card .id-background .user-image {
+        padding-top: 75px;
+    }
+    
+    .id-card .id-background .user-image img {
+        margin-left: 11px;
+    }
+    .id-card .id-background .user-id p {
+        padding: 6px 10px;
+        margin-right: -15px;
+    }
+    .id-card .id-background .main-column .left-column h4 {
+        font-size: 23px;
+    }
+    .id-card .id-background .main-column .left-column p {
+        font-size: 14px;
+    }
+    .id-card .id-background .main-column .right-column {
+        margin-left: 15px;
+    }
+    .id-card .id-background .main-column .right-column {
+        text-align: start;
+    }
+    .id-card .id-background .details h3 {
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width: 320px){
+    .id-card .id-background .heading h3 {
+        font-size: 20px;
+    }
+    .id-card .id-background .heading h5 {
+        font-size: 15px;
+    }
+    .id-card .id-background .details .course {
+        font-size: 18px;
+    }
+    .id-card .id-background .details .date {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .id-card .id-background .website-url {
+        padding: 13px 0px 9px 0px;
+    }
+}
